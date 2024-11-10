@@ -1,0 +1,19 @@
+#ifndef CLIENT_H
+#define CLIENT_H
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
+#include <sys/select.h>
+
+#define MAX_LINE 1024
+#define PORT 2580
+#define MAX_CLIENTS 10  
+
+void client(int port);
+void exit_client();
+
+#endif
